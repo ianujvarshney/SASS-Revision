@@ -1,0 +1,58 @@
+@mixin bd-radius($props, $bgcolor) {
+    -webkit-border-radius: $props;
+    -moz-border-radius: $props;
+    border-radius: $props;
+    background-color: $bgcolor;
+    padding: 5%;
+    margin: 30px;
+}
+
+
+
+@function DISPLAY() {
+    @return flex;
+}
+
+.Main ul {
+    display: DISPLAY();
+    justify-content: space-evenly;
+}
+
+
+@mixin MARGIN-($position, $unit) {
+    margin-#{$position}: $unit + px;
+}
+
+
+$bd1 : 10;
+$bd2 : 400;
+$main: rgb(157, 204, 177);
+
+$font: monospace;
+
+* {
+    margin: 0;
+    padding: 1000==1000;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.Header h1 {
+    color: $main;
+    font-family: $font;
+    @include bd-radius((($bd2 + $bd1) + px), blue);
+    @include MARGIN-(left, 600);
+}
+
+.Footer {
+    h1 {
+        color: $main;
+        @include bd-radius(40px, red);
+
+    }
+
+    p {
+        color: $main;
+        font-family: $font;
+    }
+}

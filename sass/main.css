@@ -1,0 +1,33 @@
+.Main ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+* {
+  margin: 0;
+  padding: true;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.Header h1 {
+  color: rgb(157, 204, 177);
+  font-family: monospace;
+  border-radius: 410px;
+  background-color: blue;
+  padding: 5%;
+  margin: 30px;
+  margin-left: 600px;
+}
+
+.Footer h1 {
+  color: rgb(157, 204, 177);
+  border-radius: 40px;
+  background-color: red;
+  padding: 5%;
+  margin: 30px;
+}
+.Footer p {
+  color: rgb(157, 204, 177);
+  font-family: monospace;
+}/*# sourceMappingURL=main.css.map */
